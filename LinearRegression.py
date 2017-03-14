@@ -21,7 +21,7 @@ Scaled_Y = preprocessing.scale(Y)
 
 
 #Taking 75% of Scaled_X and Scaled_Y for training and rest 25% for testing purpose
-X_train , X_test ,  Y_train , Y_test = cross_validation.train_test_split(Scaled_X,Scaled_Y,test_size=0.05)
+X_train , X_test ,  Y_train , Y_test = cross_validation.train_test_split(Scaled_X,Scaled_Y,test_size=0.25)
 
 #Shape of X_train should be array(number_of_sample,number_of_feature) 
 #If you have only one feature and shape of array is not like (number_of_sample,1) , then reshape --> X_train.reshape(len(X_train),1)
